@@ -1,0 +1,51 @@
+@import '../../styling/vars';
+
+.search {
+  display: flex;
+  padding-left: $spacing;
+  padding-right: $spacing;
+
+  @media (min-width: $bp-md) {
+    grid-area: search;
+    margin-right: $spacing-md;
+    padding-bottom: $spacing-md;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: $spacing-md;
+  }
+}
+
+// Specific selector needed to turn off iPhone/Safari input element rounding
+input[type='search'].search__input {
+  border: none;
+  border-radius: 0;
+  // Turn off iPhone/Safari input element rounding
+  -webkit-border-radius: 0;
+  flex: 1;
+  padding: $spacing;
+  margin: 0; // Needed for Safari
+  // Turn off iPhone/Safari input element styling
+  -webkit-appearance: none;
+
+  @media (min-width: $bp-md) {
+    max-width: 224px; // Needed for Safari
+  }
+
+  &:focus {
+    box-shadow: $box-shadow-focus-replace;
+    outline: none;
+  }
+}
+
+.search__button {
+  background-color: $color-tertiary;
+  border: none;
+  padding-left: $spacing;
+  padding-right: $spacing;
+  margin: 0; // Needed for Safari
+
+  &:focus {
+    box-shadow: $box-shadow-focus-replace;
+    outline: none;
+  }
+}

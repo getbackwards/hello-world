@@ -1,0 +1,12 @@
+@import '../../styling/vars';
+
+.panel {
+  background-color: $color-tertiary;
+  color: $color-white;
+  grid-area: panel;
+  padding: $spacing;
+
+  @media (min-width: $bp-md) {
+    padding: $spacing-md;
+  }
+}

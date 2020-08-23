@@ -1,0 +1,19 @@
+@import './styling/vars';
+
+.app {
+  display: grid;
+  grid-template-areas:
+  "hd hd hd hd hd"
+  "content content content content content"
+  "panel panel panel panel panel";
+  grid-template-rows: $grid-first-row-height auto 80px;
+  height: 100vh;
+
+  @media (min-width: $bp-md) {
+    grid-template-areas:
+    "hd hd hd hd hd"
+    "content content content content panel"; 
+    grid-template-columns: $grid-columns-right-md;
+    grid-template-rows: $grid-first-row-height auto;
+  }
+}

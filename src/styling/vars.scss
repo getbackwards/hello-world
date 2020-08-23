@@ -1,0 +1,25 @@
+/* VARIABLES */
+
+/* breakpoints */
+$bp-md: 768px;
+
+/* reusable CSS grid values */
+/* ####################### */
+/* sets width of elements on the right side above medium breakpoint */
+$grid-columns-right-md: repeat(4, 1fr) 280px;
+/* Currently used to keep header consietent height across breakpoints */
+/* Look to refactor later, perhaps with minmax */
+$grid-first-row-height: 90px;
+
+/* spacing values */
+$spacing: 0.5rem;
+$spacing-md: 1rem;
+
+/* color vars */
+$color-primary: #DF6C4F;
+$color-secondary: #49c5b6;
+$color-tertiary: #000;
+$color-white: #fff;
+
+/* other styling vars */;
+$box-shadow-focus-replace: inset 0 0 0 2px rgb(37, 255, 66);

@@ -1,0 +1,11 @@
+@import '../../styling/vars';
+
+.content {
+  background-color: $color-secondary;
+  grid-area: content;
+  padding: $spacing;
+
+  @media (min-width: $bp-md) {
+    padding: $spacing-md;
+  }
+}
