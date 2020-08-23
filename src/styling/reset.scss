@@ -77,3 +77,11 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* Browser specific overrides */
+input[type='search'] {
+  // Turn off iPhone/Safari input element rounding
+  -webkit-border-radius: 0;
+  // Turn off iPhone/Safari input element styling
+  -webkit-appearance: none;
+}
