@@ -108,7 +108,9 @@ I used Create React App to create the assessment. I have only begun learning Rea
 
 Create React App supports all modern browsers so I have not added any polyfills to support browsers such as IE11 etc. Setting up SASS was quite easy, I only had to install `node-sass` and "It just works" :)
 
-I have used CSS grid to do the main layout. I am by no means an expert in CSS grid, it is a lot easier achieve layouts independent of markup structure and you can achieve simple layouts quite quickly. The spec itself is quit deep though and I will continue to delve into to expand my knowledge in this area.
+I have used CSS grid to do the main layout. I am by no means an expert in CSS grid, it is a lot easier achieve layouts independent of markup structure and you can achieve simple layouts quite quickly. The spec itself is quite deep though and I will continue to delve into it to expand my knowledge in this area.
+
+I have used semantic HTML elements for the markup where I can so users of assistive technologies will have access to useful associated APIs. It is a quite a small code base so there is not that much commenting throughout the code.
 
 ---
 
