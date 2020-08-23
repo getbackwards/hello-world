@@ -5,7 +5,7 @@ To install this project clone the repo:
 `git clone https://github.com/getbackwards/hello-world.git`
 
 The project uses [yarn](https://classic.yarnpkg.com/en/docs/install/) as a package manager, you will need to install it if you do not have it.
-See the end of this `README` for availblew scripts.
+See the end of this `README` for availble scripts.
 
 ---
 
@@ -13,7 +13,7 @@ See the end of this `README` for availblew scripts.
 
 In a file named `​README.md​`, ​ please **​give a brief description of the Box Model​** in your own words. Feel free to illustrate with examples from your experience.
 
-_The box model is a set of rules that affects how HTML elements are laid out on screen. It mostly concerns the way block and inline level elements interact with each other and whether properties such as border and padding are added to the dimensions of an element or are contained within the dimensions of an element._
+_The box model is a set of rules that affects how HTML elements are laid out on screen. It mostly concerns the way block and inline level elements interact with each other and whether properties such as border and padding are added to or are contained within the dimensions of an element._
 
 ---
 
