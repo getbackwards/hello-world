@@ -104,6 +104,12 @@ console.log(`Searched sale details: ${JSON.stringify(searchSales('j_999'))}`);
 
 ## Replicate layout
 
+I used Create React App to create the assessment. I have only begun learning React but the concepts and workflow are similar to Angular and I quite like the dev experience so far.
+
+Create React App supports all modern browsers so I have not added any polyfills to support browsers such as IE11 etc. Setting up SASS was quite easy, I only had to install `node-sass` and "It just works" :)
+
+I have used CSS grid to do the main layout. I am by no means an expert in CSS grid, it is a lot easier achieve layouts independent of markup structure and you can achieve simple layouts quite quickly. The spec itself is quit deep though and I will continue to delve into to expand my knowledge in this area.
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
