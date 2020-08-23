@@ -22,12 +22,7 @@ _The box model is a set of rules that affects how HTML elements are laid out on 
 ```javascript
 const sales = [
   { itemSold: 'Football', price: 19.99, dateSold: '2018-04-07', id: 'j_123' },
-  {
-    itemSold: 'Trainers',
-    price: 159.95,
-    dateSold: '2018-03-02',
-    id: 't_acds1',
-  },
+  { itemSold: 'Trainers', price: 159.95, dateSold: '2018-03-02', id: 't_acds1' },
   {
     itemSold: 'Cricket bat',
     price: 204.97,
