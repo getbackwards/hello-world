@@ -1,3 +1,5 @@
+.prettierignore
+
 # Front End Developer assessment
 
 To install this project clone the repo:
