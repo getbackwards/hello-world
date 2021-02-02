@@ -1,6 +1,12 @@
 @import './styling/reset.scss';
 @import './styling/accessibility.scss';
 
+// Lobotomized Owl
+// https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/
+* + * {
+	margin-bottom: 1.5em;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
