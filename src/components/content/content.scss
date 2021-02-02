@@ -1,4 +1,5 @@
 @import '../../styling/vars';
+@import '../../styling/animation/animation';
 
 .content {
   background-color: $color-secondary;
@@ -7,5 +8,14 @@
 
   @media (min-width: $bp-md) {
     padding: $spacing-md;
+  }
+}
+
+.content__heading {
+  // Animation
+  @include animate-from-right;
+
+  @media (min-width: $bp-md) {
+    @include animate-from-left;
   }
 }

@@ -1,4 +1,5 @@
 @import '../../styling/vars';
+@import '../../styling/animation/animation.scss';
 
 .header {
   align-items: center;
@@ -16,7 +17,19 @@
   font-size: 1.75rem;
   padding-left: $spacing;
 
+  // Animation
+  @include animate-from-left;
+
   @media (min-width: $bp-md) {
     padding-left: $spacing-md;
+
+    // Animation
+    @include animate-from-top;
+  }
+}
+
+.header__h1:hover {
+  @media (min-width: $bp-md) {
+    transform: scale($animation-scale-default);
   }
 }

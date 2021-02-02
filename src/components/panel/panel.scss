@@ -1,4 +1,5 @@
 @import '../../styling/vars';
+@import '../../styling/animation/animation';
 
 .panel {
   background-color: $color-tertiary;
@@ -8,5 +9,13 @@
 
   @media (min-width: $bp-md) {
     padding: $spacing-md;
+  }
+}
+
+.panel__heading {
+  @include animate-from-left;
+
+  @media (min-width: $bp-md) {
+    @include animate-from-right;
   }
 }

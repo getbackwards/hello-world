@@ -1,0 +1,46 @@
+@import 'animation-vars';
+
+// Reusable animation mixins
+@mixin animate-from-top {
+  animation: animate-from-top $animation-timing-default linear;
+  transition: all $animation-transition-default-timing;
+
+  @keyframes animate-from-top {
+    0% {
+      transform: translateY(-100px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+
+@mixin animate-from-left {
+  animation: animate-from-left $animation-timing-default ease-out;
+
+  @keyframes animate-from-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}
+
+@mixin animate-from-right {
+  animation: animate-from-right $animation-timing-default ease-out forwards;
+
+  @keyframes animate-from-right {
+    0% {
+      transform: translateX(200px);
+    }
+
+    100% {
+      transform: translateX(0px);
+    }
+  }
+}

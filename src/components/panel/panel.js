@@ -5,7 +5,7 @@ class Panel extends Component {
   render() {
     return (
       <aside className="panel">
-        <h2>Panel</h2>
+        <h2 className="panel__heading">Panel</h2>
       </aside>
     );
   }
