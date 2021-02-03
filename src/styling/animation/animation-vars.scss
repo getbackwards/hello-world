@@ -5,7 +5,9 @@ $animation-timing-default: 1s;
 $animation-timing-long: 2s;
 
 // Transition vars
-$animation-transition-default-timing: 0.5s;
+$transition-timing-default: 0.5s;
+$transition-timing-long: 1s;
+$transition-timing-very-long: 2s;
 
 // Scale values
 $animation-scale-default: 1.1;

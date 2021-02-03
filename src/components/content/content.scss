@@ -13,9 +13,9 @@
 
 .content__heading {
   // Animation
-  @include animate-from-right;
+  @include animate-from-right($animation-timing-default);
 
   @media (min-width: $bp-md) {
-    @include animate-from-left;
+    @include animate-from-left($animation-timing-default);
   }
 }

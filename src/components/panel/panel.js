@@ -7,7 +7,9 @@ class Panel extends Component {
     return (
       <aside className="panel">
         <h2 className="panel__heading">Panel</h2>
-        <Button variant="contained">Hello World</Button>
+        <Button className="panel__button" variant="contained">
+          Do something
+        </Button>
       </aside>
     );
   }

@@ -18,13 +18,13 @@
   padding-left: $spacing;
 
   // Animation
-  @include animate-from-left;
+  @include animate-from-left($animation-timing-default);
 
   @media (min-width: $bp-md) {
     padding-left: $spacing-md;
 
     // Animation
-    @include animate-from-top;
+    @include animate-from-top($transition-timing-default);
   }
 }
 

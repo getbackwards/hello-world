@@ -7,7 +7,7 @@
   "hd hd hd hd hd"
   "content content content content content"
   "panel panel panel panel panel";
-  grid-template-rows: $grid-first-row-height auto 80px;
+  grid-template-rows: $grid-first-row-height auto 60px;
   height: 100vh;
 
   @media (min-width: $bp-md) {

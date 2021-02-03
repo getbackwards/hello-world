@@ -1,9 +1,24 @@
 @import 'animation-vars';
 
 // Reusable animation mixins
-@mixin animate-from-top {
+@mixin animate-fade-in($duration) {
+  animation: animate-fade-in $animation-timing-long linear forwards;
+  transition: all $duration 1s;
+
+  @keyframes animate-fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin animate-from-top($duration) {
   animation: animate-from-top $animation-timing-default linear;
-  transition: all $animation-transition-default-timing;
+  transition: all $duration;
 
   @keyframes animate-from-top {
     0% {
@@ -16,8 +31,8 @@
   }
 }
 
-@mixin animate-from-left {
-  animation: animate-from-left $animation-timing-default ease-out;
+@mixin animate-from-left($duration) {
+  animation: animate-from-left $duration ease-out;
 
   @keyframes animate-from-left {
     0% {
@@ -31,8 +46,8 @@
   }
 }
 
-@mixin animate-from-right {
-  animation: animate-from-right $animation-timing-default ease-out forwards;
+@mixin animate-from-right($duration) {
+  animation: animate-from-right $duration ease-out forwards;
 
   @keyframes animate-from-right {
     0% {

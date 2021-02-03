@@ -2,20 +2,36 @@
 @import '../../styling/animation/animation';
 
 .panel {
+  align-items: baseline;
   background-color: $color-tertiary;
   color: $color-white;
+  display: flex;
   grid-area: panel;
+  justify-content: space-between;
   padding: $spacing;
 
   @media (min-width: $bp-md) {
+    display: block;
     padding: $spacing-md;
   }
 }
 
 .panel__heading {
-  @include animate-from-left;
+  cursor: $cursor-default;
+  transition: opacity $transition-timing-default ease-in;
+  @include animate-from-left($animation-timing-default);
 
   @media (min-width: $bp-md) {
-    @include animate-from-right;
+    @include animate-from-right($animation-timing-default);
   }
 }
+
+.panel__heading:hover {
+  opacity: 0;
+}
+
+.panel__button {
+  @include animate-fade-in($transition-timing-very-long);
+}
+
+
