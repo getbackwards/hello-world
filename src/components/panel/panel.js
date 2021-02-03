@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
+import '../../scripts/scripts';
 import './panel.scss';
 
 class Panel extends Component {
@@ -7,7 +8,7 @@ class Panel extends Component {
     return (
       <aside className="panel">
         <h2 className="panel__heading">Panel</h2>
-        <Button className="panel__button" variant="contained">
+        <Button id="panelButton" className="panel__button" variant="contained">
           Do something
         </Button>
       </aside>
